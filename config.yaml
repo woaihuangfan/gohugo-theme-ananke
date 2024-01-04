@@ -1,3 +1,8 @@
 module:
   hugoVersion:
     min: "0.84.0"
+params:
+  header_bg: "/images/banner1.jpg"
+  post_content_classes: "Consolas"
+  custom_css: ["custom.css"]
+  body_classes: "bg-white"
