@@ -2742,7 +2742,7 @@ img {
 /* 当屏幕宽度小于等于600px时的样式 */
 @media only screen and (max-width: 600px) {
     .ph6 {
-        padding-left: 1rem;  /* 调整左边距 */
+        padding-left: 1rem; /* 调整左边距 */
         padding-right: 1rem; /* 调整右边距 */
     }
 }
@@ -2750,7 +2750,7 @@ img {
 /* 当屏幕宽度大于600px且小于等于1200px时的样式 */
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
     .ph6 {
-        padding-left: 4rem;  /* 调整左边距 */
+        padding-left: 4rem; /* 调整左边距 */
         padding-right: 4rem; /* 调整右边距 */
     }
 }
@@ -3253,38 +3253,43 @@ img {
 .f7 {
     font-size: .75rem
 }
+
 /* 响应式样式 */
 
 /* 当屏幕宽度小于等于600px时的样式 */
 @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.25em;
+    }
+
     .f1 {
-        font-size: 2rem;  /* 调整字体大小 */
+        font-size: 1.5rem; /* 调整字体大小 */
     }
 
     .f2 {
-        font-size: 1.5rem;  /* 调整字体大小 */
+        font-size: 1.25rem; /* 调整字体大小 */
     }
 
     .f3 {
-        font-size: 1.25rem;  /* 调整字体大小 */
+        font-size: 1rem; /* 调整字体大小 */
     }
 
     .f4,
     .f5,
     .f6,
     .f7 {
-        font-size: 1rem;  /* 调整字体大小 */
+        font-size: 0.75rem; /* 调整字体大小 */
     }
 }
 
 /* 当屏幕宽度大于600px且小于等于1200px时的样式 */
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
     .f1 {
-        font-size: 2.5rem;  /* 调整字体大小 */
+        font-size: 2.5rem; /* 调整字体大小 */
     }
 
     .f2 {
-        font-size: 1.75rem;  /* 调整字体大小 */
+        font-size: 1.75rem; /* 调整字体大小 */
     }
 
     /* 可以根据需要添加其他样式调整 */
