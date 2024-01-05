@@ -22,8 +22,21 @@ tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
 
+.footer{
+
+
+}
 /* 响应式样式 */
 @media only screen and (max-width: 600px) {
+    .footer{
+        font-size: 0.5rem;
+        display: block;
+        padding-left: 0.1rem;
+        padding-right: 0.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
     table {
         font-size: 0.5rem;
     }
@@ -46,3 +59,4 @@ tbody tr:nth-child(even) {
         margin-bottom: 5px;
     }
 }
+
