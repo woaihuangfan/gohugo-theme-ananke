@@ -3263,22 +3263,22 @@ img {
     }
 
     .f1 {
-        font-size: 1.5rem; /* 调整字体大小 */
+        font-size: 2rem; /* 调整字体大小 */
     }
 
     .f2 {
-        font-size: 1.25rem; /* 调整字体大小 */
+        font-size: 1.5rem; /* 调整字体大小 */
     }
 
     .f3 {
-        font-size: 1rem; /* 调整字体大小 */
+        font-size: 1.25rem; /* 调整字体大小 */
     }
 
     .f4,
     .f5,
     .f6,
     .f7 {
-        font-size: 0.75rem; /* 调整字体大小 */
+        font-size: 1rem; /* 调整字体大小 */
     }
 }
 
