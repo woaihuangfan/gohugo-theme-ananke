@@ -1,35 +1,77 @@
-table tr {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 0;
+/* 基本样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* 防止文字换行 */
+    overflow-x: auto; /* 添加横向滚动条 */
 }
 
-thead,tr {
-    page-break-inside: avoid;
-    page-break-after: auto;
+thead {
+    background-color: #343a40;
+    color: white;
 }
 
-table tr:nth-child(2n),
-thead {
-    background-color: #f8f8f8;
+th, td {
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap; /* 防止文字换行 */
 }
-thead {
-    display: table-header-group;
+
+/* 斑马纹背景 */
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
 }
-table th:first-child, table td:first-child {
-    margin-top: 0;
+
+/* 响应式样式 */
+
+/* 当屏幕宽度小于等于600px时的样式 */
+@media only screen and (max-width: 600px) {
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
 }
-table tr th {
-    border-bottom: 0;
+
+/* 当屏幕宽度大于600px且小于等于1200px时的样式 */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    th, td {
+        padding: 14px;
+    }
 }
-td, th {
-    padding: 0;
+
+/* 当屏幕宽度大于1200px时的样式 */
+@media only screen and (min-width: 1201px) {
+    /* 可以根据需要添加相应的样式调整 */
+    th, td {
+        padding: 16px; /* 调整表头和单元格的内边距 */
+    }
+
+    tbody tr:hover {
+        background-color: #f2f2f2; /* 鼠标悬停时的背景色 */
+        transition: background-color 0.3s ease;
+    }
+
+    tbody td:before {
+        content: ""; /* 隐藏移动端伪元素 */
+    }
 }
-table th:first-child, table td:first-child {
-    margin-top: 0;
-}
-table td {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 6px 13px;
-}
+
+
